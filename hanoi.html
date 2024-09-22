@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanoi</title>
+    <link rel="stylesheet" href="hanoi.css" media="screen"> 
+    <script src="hanoi.js" type="module" defer></script> 
+</head>
+<body>
+    <h1><u>TOWER OF HANOI</u></h1>
+    <div class="container">
+        <div class="left-slidebar">
+            <div class="new-game">
+                <select name="discs" id="discSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <button id="newGameBtn">New Game</button>
+            </div>
+            <div class="speed">
+                <p>Speed</p>
+                <input type="range" id="speedRange" step="1" max="100" value="100">
+            </div>
+            <div class="buttons">
+                <button id="btnSolve">Solve</button>
+                <a href="index.html">Back</a>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="tower">
+                <div class="stem"></div>
+                <div class="plate"></div>
+            </div>
+            <div class="tower">
+                <div class="stem"></div>
+                <div class="plate"></div>
+            </div>
+            <div class="tower">
+                <div class="stem"></div>
+                <div class="plate"></div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
